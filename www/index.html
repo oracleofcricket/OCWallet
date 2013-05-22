@@ -13,417 +13,264 @@
  
 </head>
 <body>
-  <!-- Dashboard -->
-  <div data-role="page" id="page6">
-      <div data-theme="a" data-role="header">
-          <h3>
-              OC Scoring
-          </h3>
-      </div>
-      <div data-role="content">
-      </div>
-      <div data-role="controlgroup" data-type="horizontal">
-          <ul>
-              <li>
-                  <a href="#page10" data-transition="fade" data-theme="" data-icon="grid">
-                      News
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Follow
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="plus">
-                      Score
-                  </a>
-              </li>
-              <li>
-                  <a href="#page6" data-transition="fade" data-theme="" data-icon="gear">
-                      Settings
-                  </a>
-              </li>
-              <li>
-                  <a href="#page8" data-transition="fade" data-theme="" data-icon="star">
-                      Profile
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  <!-- Login -->
-  <div data-role="page" id="page8">
-      <div data-theme="a" data-role="header">
-          <a data-role="button" href="#page9" data-icon="plus" data-iconpos="left"
-          class="ui-btn-right">
-              Register
-          </a>
-          <h3>
-              Login
-          </h3>
-      </div>
-      <div data-role="content">
-          <form action="">
-              <div data-role="fieldcontain">
-                  <label for="strEmailAddress">
-                      Login Name
-                  </label>
-                  <input name="strEmailAddress" id="strEmailAddress" placeholder="Enter Email Address"
-                  value="" type="email" data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="strPassword">
-                      Password
-                  </label>
-                  <input name="strPassword" id="strPassword" placeholder="" value="" type="password"
-                  data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="bitSave">
-                      Save Profile Locally?
-                  </label>
-                  <select name="toggleswitch1" id="bitSave" data-theme="" data-role="slider"
-                  data-mini="true">
-                      <option value="off">
-                          No
-                      </option>
-                      <option value="on">
-                          Yes
-                      </option>
-                  </select>
-              </div>
-              <input id="btLogin" type="submit" value="Login" data-mini="true">
-          </form>
-      </div>
-      <div data-role="tabbar" data-iconpos="top" data-theme="a">
-          <ul>
-              <li>
-                  <a href="#page10" data-transition="fade" data-theme="" data-icon="bars">
-                      News
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Follow
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Score
-                  </a>
-              </li>
-              <li>
-                  <a href="#page6" data-transition="fade" data-theme="" data-icon="gear">
-                      Settings
-                  </a>
-              </li>
-              <li>
-                  <a href="#page8" data-transition="fade" data-theme="" data-icon="star">
-                      Profile
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  <!-- Signup -->
-  <div data-role="page" id="page9">
-      <div data-theme="a" data-role="header">
-          <a data-role="button" href="#page8" data-icon="arrow-l" data-iconpos="left"
-          class="ui-btn-left">
-              Login
-          </a>
-          <h3>
-              Register
-          </h3>
-      </div>
-      <div data-role="content">
-          <form action="" method="POST">
-              <div data-role="fieldcontain">
-                  <label for="strEmailAddress">
-                      Email Address
-                  </label>
-                  <input name="strEmailAddress" id="strEmailAddress" placeholder="This will be used as Login Name"
-                  value="" type="text" data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="strConfirmEmailAddress">
-                      Confirm Email Address
-                  </label>
-                  <input name="strConfirmEmailAddress" id="strConfirmEmailAddress" placeholder=""
-                  value="" type="email" data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="strPassword">
-                      Password
-                  </label>
-                  <input name="strPassword" id="strPassword" placeholder="" value="" type="password"
-                  data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="strConfirmPassword">
-                      Confirm Password
-                  </label>
-                  <input name="strConfirmPassword" id="strConfirmPassword" placeholder=""
-                  value="" type="password" data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="strFirstName">
-                      First Name
-                  </label>
-                  <input name="strFirstName" id="strFirstName" placeholder="" value="" type="text"
-                  data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="strLastName">
-                      Family Name
-                  </label>
-                  <input name="strLastName" id="strLastName" placeholder="" value="" type="text"
-                  data-mini="true">
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="selectmenu6">
-                      Date of Birth
-                  </label>
-                  <select id="selectmenu6" data-native-menu="false" name="dtDate" data-mini="true">
-                      <option value="">
-                          Date
-                      </option>
-                      <option value="">
-                          1
-                      </option>
-                      <option value="">
-                          2
-                      </option>
-                  </select>
-              </div>
-              <div data-role="fieldcontain">
-                  <select id="selectmenu7" data-native-menu="false" name="dtMonth" data-mini="true">
-                      <option value="">
-                          Month
-                      </option>
-                      <option value="1">
-                          Jan
-                      </option>
-                      <option value="2">
-                          Feb
-                      </option>
-                  </select>
-              </div>
-              <div data-role="fieldcontain">
-                  <select id="selectmenu8" data-native-menu="false" name="dtYear" data-mini="true">
-                      <option value="">
-                          Year
-                      </option>
-                      <option value="">
-                          2014
-                      </option>
-                      <option value="">
-                          2013
-                      </option>
-                  </select>
-              </div>
-              <div data-role="fieldcontain">
-                  <select id="selectmenu9" data-native-menu="false" name="strBattingStyle"
-                  data-mini="true">
-                      <option value="">
-                          Batting Style
-                      </option>
-                      <option value="100">
-                          Right Handed
-                      </option>
-                      <option value="200">
-                          Left Handed
-                      </option>
-                  </select>
-              </div>
-              <div data-role="fieldcontain">
-                  <select id="selectmenu10" data-native-menu="false" name="" data-mini="true">
-                      <option value="">
-                          Bowling Style
-                      </option>
-                      <option value="100">
-                          Right Arm Fast
-                      </option>
-                      <option value="200">
-                          Right Arm Medium
-                      </option>
-                  </select>
-              </div>
-              <div data-role="fieldcontain">
-                  <label for="bitWicketKeeper">
-                      Wicketkeeper?
-                  </label>
-                  <select name="toggleswitch2" id="bitWicketKeeper" data-theme="" data-role="slider"
-                  data-mini="true">
-                      <option value="off">
-                          No
-                      </option>
-                      <option value="on">
-                          Yes
-                      </option>
-                  </select>
-              </div>
-              <input type="submit" data-icon="bars" data-iconpos="right" value="Sign Up"
-              data-mini="true">
-          </form>
-      </div>
-      <div data-role="tabbar" data-iconpos="top" data-theme="a">
-          <ul>
-              <li>
-                  <a href="#page10" data-transition="fade" data-theme="" data-icon="bars">
-                      News
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Follow
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Score
-                  </a>
-              </li>
-              <li>
-                  <a href="#page6" data-transition="fade" data-theme="" data-icon="gear">
-                      Settings
-                  </a>
-              </li>
-              <li>
-                  <a href="#page8" data-transition="fade" data-theme="" data-icon="star">
-                      Profile
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  <!-- News -->
-  <div data-role="page" id="page10">
-      <div data-theme="a" data-role="header">
-          <h2>
-              News - Top Stories
-          </h2>
-          <div data-role="navbar" data-iconpos="top">
-              <ul>
-                  <li>
-                      <a href="#page7" data-transition="fade" data-theme="" data-icon="">
-                          Countries
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#page10" data-transition="fade" data-theme="" data-icon="">
-                          Associates
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#page10" data-transition="fade" data-theme="" data-icon="">
-                          Tournaments
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#page10" data-transition="fade" data-theme="" data-icon="">
-                          Clubs
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#page10" data-transition="fade" data-theme="" data-icon="">
-                          Authors
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-      <div data-role="content">
-      </div>
-      <div data-role="tabbar" data-iconpos="top" data-theme="a">
-          <ul>
-              <li>
-                  <a href="#page10" data-transition="fade" data-theme="" data-icon="bars">
-                      News
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Follow
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Score
-                  </a>
-              </li>
-              <li>
-                  <a href="#page6" data-transition="fade" data-theme="" data-icon="gear">
-                      Settings
-                  </a>
-              </li>
-              <li>
-                  <a href="#page8" data-transition="fade" data-theme="" data-icon="star">
-                      Profile
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  <!-- NewsByCountry -->
-  <div data-role="page" id="page7">
-      <div data-theme="a" data-role="header">
-          <a data-role="button" data-inline="true" href="#page10" data-icon="arrow-l"
-          data-iconpos="left" class="ui-btn-left">
-              News
-          </a>
-          <h3>
-              News - by Country
-          </h3>
-      </div>
-      <div data-role="content">
-          <div style="display: inline">
-              <img style="width: 90px; height: 90px" src="https://s3.amazonaws.com/assets.codiqa.com/E7e1E72JRA22uuObYlIU_BCCI-logo_1.jpg">
-          </div>
-          <div style="display: inline">
-              <img style="width: 90px; height: 90px" src="https://s3.amazonaws.com/assets.codiqa.com/zOzRjsTyR86e0cVhMq22_ca.jpg">
-          </div>
-          <div style="display: inline">
-              <img style="width: 90px; height: 90px" src="https://s3.amazonaws.com/assets.codiqa.com/9jjyEdqdTKi0QVUGT2nM_ecb.jpg">
-          </div>
-          <div style="display: inline">
-              <img style="width: 90px; height: 90px" src="https://s3.amazonaws.com/assets.codiqa.com/4o7WFT4cQdqA12dgsid5_slb.jpg">
-          </div>
-          <div style="display: inline">
-              <img style="width: 90px; height: 90px" src="https://s3.amazonaws.com/assets.codiqa.com/tcknXnwQFm7zExKhIzlA_pcb.jpg">
-          </div>
-      </div>
+	<div data-role="page" id="home" data-title="Welcome to OC Wallet">
+		<div data-role="header">
+			<a data-role="button" href="#home" data-icon="plus" data-iconpos="left" class="ui-btn-left">Home</a>
+			<h1>OC Wallet</h1>
+		</div>
+		<div data-role="content">
+		
+		</div>
 
-      <div data-role="tabbar" data-iconpos="top" data-theme="a">
-          <ul>
-              <li>
-                  <a href="#page10" data-transition="fade" data-theme="" data-icon="bars">
-                      News
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Follow
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      Score
-                  </a>
-              </li>
-              <li>
-                  <a href="#page6" data-transition="fade" data-theme="" data-icon="gear">
-                      Settings
-                  </a>
-              </li>
-              <li>
-                  <a href="#page8" data-transition="fade" data-theme="" data-icon="star">
-                      Profile
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#news" data-transition="fade" data-theme="a" data-icon="grid">News</a></li>
+                  		<li><a href="#live" data-transition="fade" data-theme="a" data-icon="gear">Live!</a></li>
+                  		<li><a href="#score" data-transition="fade" data-theme="a" data-icon="gear">Score</a></li>
+                  		<li><a href="#settings" data-transition="fade" data-theme="a" data-icon="gear">Settings</a></li>
+                  		<li><a href="#profile" data-transition="fade" data-theme="a" data-icon="gear">Profile</a></li>
+
+	              	</ul>
+			</div>
+			<h1>&copy; OracleOfCricket Inc.</h1>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="profile" data-title="Login to OC Wallet">
+		<div data-role="header">
+			<a data-role="button" href="#home" data-icon="plus" data-iconpos="left" class="ui-btn-left">Home</a>
+			<a data-role="button" href="#register" data-icon="plus" data-iconpos="left" class="ui-btn-right">Register</a>
+			<h1>Login</h1>
+		</div>
+		<div data-role="content">
+			<form action="">
+              			<div data-role="fieldcontain">
+                  			<label for="strEmailAddress">Login Name</label>
+                  			<input name="strEmailAddress" id="strEmailAddress" placeholder="Enter Email Address" value="" type="email" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<label for="strPassword">Password</label>
+                  			<input name="strPassword" id="strPassword" placeholder="" value="" type="password" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<label for="bitSave">Save Profile Locally?</label>
+                  			<select name="toggleswitch1" id="bitSave" data-theme="" data-role="slider" data-mini="true">
+                      				<option value="off">No</option>
+                      				<option value="on">Yes</option>
+                  			</select>
+              			</div>
+              			<input id="btLogin" type="submit" value="Login" data-mini="true">
+          		</form>
+	
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#news" data-transition="fade" data-theme="a" data-icon="grid">News</a></li>
+                  		<li><a href="#live" data-transition="fade" data-theme="a" data-icon="gear">Live!</a></li>
+                  		<li><a href="#score" data-transition="fade" data-theme="a" data-icon="gear">Score</a></li>
+                  		<li><a href="#settings" data-transition="fade" data-theme="a" data-icon="gear">Settings</a></li>
+                  		<li><a href="#profile" data-transition="fade" data-theme="a" data-icon="gear">Profile</a></li>
+
+	              	</ul>
+			</div>
+			<h1>&copy; OracleOfCricket Inc.</h1>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="register" data-title="Register with OC Wallet">
+		<div data-role="header">
+			<a data-role="button" href="#home" data-icon="plus" data-iconpos="left" class="ui-btn-left">Home</a>
+			<a data-role="button" href="#profile" data-icon="plus" data-iconpos="left" class="ui-btn-right">Login</a>
+			<h1>Register</h1>
+		</div>
+		<div data-role="content">
+          		<form action="" method="POST">
+              			<div data-role="fieldcontain">
+                  			<label for="strEmailAddress">Email Address</label>
+                  			<input name="strEmailAddress" id="strEmailAddress" placeholder="This will be used as Login Name" type="email" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+                 			<label for="strConfirmEmailAddress">Confirm Email Address</label>
+                  			<input name="strConfirmEmailAddress" id="strConfirmEmailAddress" placeholder="" type="email" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<label for="strPassword">Password</label>
+                  			<input name="strPassword" id="strPassword" placeholder="" type="password" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+                 			<label for="strConfirmPassword">Confirm Password</label>
+                  			<input name="strConfirmPassword" id="strConfirmPassword" placeholder="" type="password" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+					<label for="strFirstName">First Name</label>
+                  			<input name="strFirstName" id="strFirstName" placeholder="" type="text" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+					<label for="strLastName">Family Name</label>
+                  			<input name="strLastName" id="strLastName" placeholder="" type="text" data-mini="true">
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<label for="selectmenu6">Date of Birth</label>
+				</div>
+              			<div data-role="fieldcontain">
+			                 <select id="dtDate" data-native-menu="false" name="dtDate" data-mini="true">
+                      				<option value="">Date</option>
+                      				<option value="1">1</option>
+                      				<option value="2">2</option>
+                      				<option value="3">3</option>
+                      				<option value="4">4</option>
+                      				<option value="5">5</option>
+                      				<option value="6">6</option>
+                      				<option value="7">7</option>
+                  			</select>
+              			</div>
+              			<div data-role="fieldcontain">
+			                 <select id="dtMonth" data-native-menu="false" name="dtMonth" data-mini="true">
+                      				<option value="">Month</option>
+                      				<option value="1">January</option>
+                      				<option value="2">February</option>
+                      				<option value="3">March</option>
+                      				<option value="4">April</option>
+                      				<option value="5">May</option>
+                      				<option value="6">June</option>
+                      				<option value="7">July</option>
+                  			</select>
+              			</div>
+              			<div data-role="fieldcontain">
+			                 <select id="dtYear" data-native-menu="false" name="dtYear" data-mini="true">
+                      				<option value="">Year</option>
+                      				<option value="2000">2000</option>
+                      				<option value="1999">1999</option>
+                      				<option value="1998">1998</option>
+                  			</select>
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<select id="strBattingStyle" data-native-menu="false" name="strBattingStyle" data-mini="true">
+                      				<option value="">Batting Style</option>
+                      				<option value="100">Right Handed</option>
+                      				<option value="200">Left Handed</option>
+                  			</select>
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<select id="strBowlingStyle" data-native-menu="false" name="strBowlingStyle" data-mini="true">
+                      				<option value="">Bowling Style</option>
+                      				<option value="100">Right Arm Fast</option>
+                      				<option value="200">Right Arm Medium</option>
+                  			</select>
+              			</div>
+              			<div data-role="fieldcontain">
+                  			<label for="bitWicketKeeper">Wicketkeeper?</label>
+                  			<select name="toggleswitch2" id="bitWicketKeeper" data-theme="" data-role="slider" data-mini="true">
+                      				<option value="off">No</option>
+                     				<option value="on">Yes</option>
+                  			</select>
+              			</div>
+              			<input type="submit" data-icon="bars" data-iconpos="right" value="Sign Up" data-mini="true">
+          		</form>
+	
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#news" data-transition="fade" data-theme="a" data-icon="grid">News</a></li>
+                  		<li><a href="#live" data-transition="fade" data-theme="a" data-icon="gear">Live!</a></li>
+                  		<li><a href="#score" data-transition="fade" data-theme="a" data-icon="gear">Score</a></li>
+                  		<li><a href="#settings" data-transition="fade" data-theme="a" data-icon="gear">Settings</a></li>
+                  		<li><a href="#profile" data-transition="fade" data-theme="a" data-icon="gear">Profile</a></li>
+
+	              	</ul>
+			</div>
+			<h1>&copy; OracleOfCricket Inc.</h1>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="news" data-title="Cricket News">
+		<div data-role="header">
+			<a data-role="button" href="#home" data-icon="plus" data-iconpos="left" class="ui-btn-left">Home</a>
+			<h1>News - Top Stories</h1>
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#newscountries" data-transition="fade" data-theme="a" data-icon="grid">Countries</a></li>
+                  		<li><a href="#newsassociates" data-transition="fade" data-theme="a" data-icon="gear">Associates</a></li>
+                  		<li><a href="#newsseries" data-transition="fade" data-theme="a" data-icon="gear">Series</a></li>
+                  		<li><a href="#newsauthors" data-transition="fade" data-theme="a" data-icon="gear">Authors</a></li>
+                  		<li><a href="#newsagencies" data-transition="fade" data-theme="a" data-icon="gear">Agencies</a></li>
+
+	              	</ul>
+			</div>
+
+		</div>
+		<div data-role="content">
+
+		
+		</div>
+
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#news" data-transition="fade" data-theme="a" data-icon="grid">News</a></li>
+                  		<li><a href="#live" data-transition="fade" data-theme="a" data-icon="gear">Live!</a></li>
+                  		<li><a href="#score" data-transition="fade" data-theme="a" data-icon="gear">Score</a></li>
+                  		<li><a href="#settings" data-transition="fade" data-theme="a" data-icon="gear">Settings</a></li>
+                  		<li><a href="#profile" data-transition="fade" data-theme="a" data-icon="gear">Profile</a></li>
+
+	              	</ul>
+			</div>
+			<h1>&copy; OracleOfCricket Inc.</h1>
+		</div>
+
+	</div>
+
+
+	<div data-role="page" id="newscountries" data-title="Cricket News - by Countries">
+		<div data-role="header">
+			<a data-role="button" href="#home" data-icon="plus" data-iconpos="left" class="ui-btn-left">Home</a>
+			<h1>News - Top Stories</h1>
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#newscountries" data-transition="fade" data-theme="a" data-icon="grid">Countries</a></li>
+                  		<li><a href="#newsassociates" data-transition="fade" data-theme="a" data-icon="gear">Associates</a></li>
+                  		<li><a href="#newsseries" data-transition="fade" data-theme="a" data-icon="gear">Series</a></li>
+                  		<li><a href="#newsauthors" data-transition="fade" data-theme="a" data-icon="gear">Authors</a></li>
+                  		<li><a href="#newsagencies" data-transition="fade" data-theme="a" data-icon="gear">Agencies</a></li>
+
+	              	</ul>
+			</div>
+
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="bcci.html"><img src="images/BCCI-logo_1.jpg" /><h3>The Board of Control for Cricket in India</h3><p>BCCI</p><span class="ui-li-count">12</span></a></li>
+				<li><a href="ca.html"><img src="images/ca.jpg" /><h3>Cricket Australia</h3><p>CA</p><span class="ui-li-count">32</span></a></li>
+				<li><a href="ecb.html"><img src="images/ecb.jpg" /><h3>England and Wales Cricket Board</h3><p>ECB</p></a></li>
+				<li><a href="nzc.html"><img src="images/New-Zealand-Cricket.gif" /><h3>New Zealand Cricket</h3><p>NZC</p></a></li>
+				<li><a href="slc.html"><img src="images/slb.jpg" /><h3>Sri Lanka Cricket</h3><p>SLC</p></a></li>
+				<li><a href="pcb.html"><img src="images/pcb.jpg" /><h3>Pakistan Cricket Board</h3><p>PCB</p></a></li>
+
+			</ul>
+
+		</div>
+
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="top">
+              		<ul>
+                  		<li><a href="#news" data-transition="fade" data-theme="a" data-icon="grid">News</a></li>
+                  		<li><a href="#live" data-transition="fade" data-theme="a" data-icon="gear">Live!</a></li>
+                  		<li><a href="#score" data-transition="fade" data-theme="a" data-icon="gear">Score</a></li>
+                  		<li><a href="#settings" data-transition="fade" data-theme="a" data-icon="gear">Settings</a></li>
+                  		<li><a href="#profile" data-transition="fade" data-theme="a" data-icon="gear">Profile</a></li>
+
+	              	</ul>
+			</div>
+			<h1>&copy; OracleOfCricket Inc.</h1>
+		</div>
+
+	</div>
+
 </body>
 </html>
